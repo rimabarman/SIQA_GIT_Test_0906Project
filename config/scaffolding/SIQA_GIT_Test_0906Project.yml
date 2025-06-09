@@ -19,6 +19,11 @@ packages:
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: TPP_services_in_FCS
+  gitServerName: SIQA_KVV_IBM
+  gitUrl: https://github.com/Karthik-V-IBM-10
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_test_0906.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
