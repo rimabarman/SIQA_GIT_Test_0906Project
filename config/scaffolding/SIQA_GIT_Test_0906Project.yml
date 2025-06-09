@@ -20,6 +20,7 @@ packages:
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: SIQA_KVV_IBM
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
@@ -28,6 +29,8 @@ services:
 - serviceName: project.siqa_git_test_0906.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
   - name: SIQA_GIT_Test_0906Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -38,6 +41,8 @@ services:
 - serviceName: project.siqa_git_test_0906.integrations:AddInt
   packages:
   - name: SIQA_GIT_Test_0906Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -53,15 +58,35 @@ services:
   packages:
   - name: SIQA_GIT_Test_0906Project
     version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
   - name: SIQACloudStreamsTests
     version: "1.0"
+- serviceName: project.siqa_git_test_0906.integrations:TPP_Add_Service
+  packages:
+  - name: SIQA_GIT_Test_0906Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: services:add3Ints
+  packages:
+  - name: TPP_services_in_FCS
+    version: "1.0"
 - serviceName: project.siqa_git_test_0906.integrations:TPP_Service
   packages:
   - name: SIQA_GIT_Test_0906Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
