@@ -72,6 +72,28 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2064
+- serviceName: project.siqa_git_test_0906.integrations:AlertsCRTandERT
+  packages:
+  - name: SIQA_GIT_Test_0906Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2064
 - serviceName: project.siqa_git_test_0906.integrations:SIQAAdapterFlow
   packages:
   - name: SIQA_GIT_Test_0906Project
