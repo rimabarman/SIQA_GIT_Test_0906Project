@@ -25,6 +25,11 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: SIQAJDBCAdapterTests
+  gitServerName: SIQA_KVV_IBM
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_test_0906.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
   packages:
@@ -46,8 +51,14 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: pub.math:addInts
@@ -62,8 +73,14 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: project.siqa_git_test_0906.integrations:TPP_Add_Service
@@ -74,31 +91,17 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
   - name: WmSalesforceProvider
     version: 10.7.0.0.66
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
   - name: SIQACloudStreamsTests
     version: "1.0"
 - serviceName: services:add3Ints
   packages:
   - name: TPP_services_in_FCS
     version: "1.0"
-- serviceName: project.siqa_git_test_0906.integrations:TPP_Service
-  packages:
-  - name: SIQA_GIT_Test_0906Project
-    version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-  - name: WmSalesforceProvider
-    version: 10.7.0.0.66
-  - name: SIQACloudStreamsTests
-    version: "1.0"
-- serviceName: GB_1:readGlobalvariable
-  packages:
-  - name: DADA_GlobalVariable1
-    version: "1.0"
-- serviceName: pub.globalVariable:getGlobalVariable
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2064
